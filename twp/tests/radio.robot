@@ -13,6 +13,6 @@ Deve Selecionar a opção Python
 
     ${element}=     Set Variable        xpath=//android.widget.RadioButton[contains(@text, 'Python')]
 
-    Click Text                          ${element}
-    Wait Until Element Is Visible       ${element}
-    Element Attribute Should Match      ${element}      checked     true       
+    Click Element                           ${element}
+    Wait Until Element Is Visible           ${element}
+    Element Attribute Should Match          ${element}      checked     true       
