@@ -13,7 +13,7 @@ Deve Selecionar a opção Robot Framework
 
     ${element}=     Set Variable        xpath=//android.widget.CheckBox[contains(@text, 'Robot Framework')]
 
-    Click Text                          ${element}
+    Click Element                          ${element}
     Wait Until Element Is Visible       id=io.qaninja.android.twp:id/rvContainer
     Wait Until Element Is Visible       ${element}      
     Element Attribute Should Match      ${element}      checked     true
